@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "deeptrace-ela"
+version = "0.1.0"
+description = "NIST-grade Error Level Analysis (ELA) and JPEG compression artifact image forensics engine."
+readme = "README.md"
+authors = [
+    { name = "Shaheer Ul Hassan", email = "samjanjua6@gmail.com" }
+]
+license = "MIT"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Image Processing",
+    "Topic :: Security",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+keywords = [
+    "error-level-analysis",
+    "ela",
+    "image-forensics",
+    "forgery-detection",
+    "tamper-detection",
+    "computer-vision",
+    "jpeg-compression"
+]
+dependencies = [
+    "pillow>=9.0.0",
+    "numpy>=1.20.0"
+]
+requires-python = ">=3.9"
+
+[project.scripts]
+deeptrace-ela = "deeptrace_ela.cli:main"
+
+[project.urls]
+"Homepage" = "https://shaheerulhassan.com/"
+"Documentation" = "https://shaheerulhassan.com/#projects"
+"Source" = "https://github.com/samjanjua6/DeepTrace"
+"Bug Tracker" = "https://github.com/samjanjua6/DeepTrace/issues"
+"Author Portfolio" = "https://shaheerulhassan.com/"

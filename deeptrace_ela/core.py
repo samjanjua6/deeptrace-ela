@@ -57,8 +57,18 @@ class ELAResult:
         """Heuristic check: returns True if significant localized compression spikes are present."""
         return len(self.anomalies) > 0
 
+    @property
+    def verdict(self) -> str:
+        """Categorical forensics assessment ('SUSPICIOUS' or 'CLEAN')."""
+        return "SUSPICIOUS" if self.is_suspicious else "CLEAN"
+
+    def save_heatmap(self, output_path: Union[str, Path]) -> None:
+        """Save the contrast-amplified ELA differential heatmap to disk."""
+        self.heatmap.save(str(output_path))
+
     def to_dict(self) -> dict:
         return {
+            "verdict": self.verdict,
             "is_suspicious": self.is_suspicious,
             "quality": self.quality,
             "scale_factor": round(self.scale_factor, 2),

@@ -22,12 +22,13 @@ Extracted from the [DeepTrace](https://github.com/samjanjua6/DeepTrace) document
 ## 🚀 Installation
 
 ```bash
+# Standard installation (lightweight, zero OpenCV bloat)
 pip install deeptrace-ela
-```
 
-Or install with development dependencies:
+# With OpenCV for sub-pixel morphological contour clustering
+pip install deeptrace-ela[cv]
 
-```bash
+# With development and test dependencies
 pip install deeptrace-ela[dev]
 ```
 
@@ -85,15 +86,19 @@ from deeptrace_ela import analyze_ela
 # Run ELA forensics analysis
 result = analyze_ela("document.jpg", quality=95, scale=15.0)
 
-print(f"Mean error: {result.mean_error:.2f}")
-print(f"Suspicious: {result.is_suspicious}")
+print(f"Forensic Verdict: {result.verdict}")        # 'SUSPICIOUS' or 'CLEAN'
+print(f"Is Suspicious:    {result.is_suspicious}")   # True / False
+print(f"Mean error:       {result.mean_error:.2f}")
 
 # Iterate over detected anomaly regions
 for box in result.anomalies:
-    print(f"Anomaly at (x={box.x}, y={box.y}, w={box.w}, h={box.h})")
+    print(f"Anomaly at (x={box.x}, y={box.y}, w={box.w}, h={box.h}) | peak delta: {box.peak_delta}")
 
-# Save or display the amplified heatmap
-result.heatmap.save("analyzed_ela.png")
+# Export structured dictionary for JSON APIs
+data = result.to_dict()
+
+# Save amplified heatmap directly
+result.save_heatmap("analyzed_ela.png")
 ```
 
 ---

@@ -9,6 +9,7 @@ import json
 from pathlib import Path
 import sys
 
+from deeptrace_ela import __version__
 from deeptrace_ela.core import analyze_ela
 
 
@@ -24,7 +25,7 @@ def main() -> None:
     parser.add_argument("-q", "--quality", type=int, default=95, help="JPEG re-compression quality level (default: 95)")
     parser.add_argument("-s", "--scale", type=float, default=None, help="Amplification factor scale (default: auto)")
     parser.add_argument("--json", action="store_true", help="Output results in JSON format")
-    parser.add_argument("-v", "--version", action="version", version="deeptrace-ela 0.1.0")
+    parser.add_argument("-v", "--version", action="version", version=f"deeptrace-ela {__version__}")
 
     args = parser.parse_args()
 
@@ -44,7 +45,7 @@ def main() -> None:
         output_path = str(input_path.with_name(f"{input_path.stem}_ela.png"))
 
     try:
-        result.heatmap.save(output_path)
+        result.save_heatmap(output_path)
     except Exception as exc:
         print(f"Warning: Could not save heatmap to '{output_path}': {exc}", file=sys.stderr)
 

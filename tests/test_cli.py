@@ -20,10 +20,11 @@ def run_cli(*args):
 class TestELACLI(unittest.TestCase):
     def test_cli_version(self):
         """CLI should print current version."""
+        from deeptrace_ela import __version__
         proc = run_cli("--version")
         self.assertEqual(proc.returncode, 0)
         output = proc.stdout + proc.stderr
-        self.assertIn("deeptrace-ela 0.1.1", output)
+        self.assertIn(f"deeptrace-ela {__version__}", output)
 
     def test_cli_basic_run(self):
         """CLI should analyze image and save default heatmap."""

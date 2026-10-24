@@ -2,10 +2,15 @@
 
 An open-source, NIST-grade Error Level Analysis (ELA) and JPEG compression artifact forensics toolkit developed by [Shaheer Ul Hassan](https://shaheerulhassan.com/).
 
-[![PyPI version](https://img.shields.io/pypi/v/deeptrace-ela.svg)](https://pypi.org/project/deeptrace-ela/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![PyPI version](https://img.shields.io/pypi/v/deeptrace-ela.svg?color=blue)](https://pypi.org/project/deeptrace-ela/)
+[![Downloads](https://img.shields.io/pypi/dm/deeptrace-ela.svg?color=emerald)](https://pypistats.org/packages/deeptrace-ela)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
-[![Author](https://img.shields.io/badge/Author-Shaheer%20Ul%20Hassan-blueviolet)](https://shaheerulhassan.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-purple.svg)](https://opensource.org/licenses/MIT)
+[![Author](https://img.shields.io/badge/Author-Shaheer%20Ul%20Hassan-8F63DD)](https://shaheerulhassan.com/)
+[![GitHub stars](https://img.shields.io/github/stars/samjanjua6/DeepTrace?style=social)](https://github.com/samjanjua6/DeepTrace)
+
+> [!TIP]
+> **Support Open-Source**: If you find `deeptrace-ela` useful in your computer vision or image tampering research, please consider giving it a ⭐ on GitHub — it helps the project grow!
 
 ---
 

@@ -56,7 +56,7 @@ deeptrace-ela = "deeptrace_ela.cli:main"
 
 [project.urls]
 "Homepage" = "https://shaheerulhassan.com/"
-"Documentation" = "https://shaheerulhassan.com/#projects"
-"Source" = "https://github.com/samjanjua6/DeepTrace"
-"Bug Tracker" = "https://github.com/samjanjua6/DeepTrace/issues"
+"Documentation" = "https://shaheerulhassan.com/blog/engineering-ela-image-forensics-in-python"
+"Source" = "https://github.com/samjanjua6/deeptrace-ela"
+"Bug Tracker" = "https://github.com/samjanjua6/deeptrace-ela/issues"
 "Author Portfolio" = "https://shaheerulhassan.com/"

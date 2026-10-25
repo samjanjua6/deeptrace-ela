@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "deeptrace-ela"
-version = "0.1.2"
+version = "0.1.3"
 description = "NIST-grade Error Level Analysis (ELA) and JPEG compression artifact image forensics engine."
 readme = "README.md"
 authors = [

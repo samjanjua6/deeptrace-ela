@@ -20,7 +20,7 @@ When an image is modified or spliced (such as pasting a fake signature, changing
 
 `deeptrace-ela` re-compresses the input image at a known quality level ($Q = 95$ by default), evaluates the absolute residual error between the input and re-compressed pixels, amplifies compression discrepancies, and detects anomalous noise clusters indicative of cut-and-paste manipulation.
 
-Extracted from the [DeepTrace](https://github.com/samjanjua6/DeepTrace) document forensics pipeline.
+Extracted from the [DeepTrace](https://github.com/samjanjua6/DeepTrace) document forensics pipeline. Source code and issue tracking are maintained at [samjanjua6/deeptrace-ela](https://github.com/samjanjua6/deeptrace-ela).
 
 ---
 
@@ -123,7 +123,9 @@ result.save_heatmap("analyzed_ela.png")
 - **Author**: [Shaheer Ul Hassan](https://shaheerulhassan.com/)
 - **Website**: [shaheerulhassan.com](https://shaheerulhassan.com/)
 - **GitHub**: [@samjanjua6](https://github.com/samjanjua6)
-- **DeepTrace Project**: [samjanjua6/DeepTrace](https://github.com/samjanjua6/DeepTrace)
+- **Source Code**: [samjanjua6/deeptrace-ela](https://github.com/samjanjua6/deeptrace-ela)
+- **Architecture Deep-Dive**: [Engineering an NIST-Grade ELA Forensics Engine](https://shaheerulhassan.com/blog/engineering-ela-image-forensics-in-python)
+- **Parent Platform**: [samjanjua6/DeepTrace](https://github.com/samjanjua6/DeepTrace)
 - **LinkedIn**: [Shaheer Ul Hassan](https://www.linkedin.com/in/muhammad-shaheer-ul-hassan-b3b7213b3/)
 
 ---

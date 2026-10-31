@@ -6,7 +6,7 @@ Developed by Shaheer Ul Hassan (https://shaheerulhassan.com/).
 
 from deeptrace_ela.core import AnomalyBox, ELAResult, analyze_ela
 
-__version__ = "0.1.3"
+__version__ = "0.1.4"
 __author__ = "Shaheer Ul Hassan"
 __author_email__ = "samjanjua6@gmail.com"
 __homepage__ = "https://shaheerulhassan.com/"

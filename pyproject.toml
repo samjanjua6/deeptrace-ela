@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "deeptrace-ela"
-version = "0.1.3"
+version = "0.1.4"
 description = "NIST-grade Error Level Analysis (ELA) and JPEG compression artifact image forensics engine."
 readme = "README.md"
 authors = [
@@ -56,6 +56,7 @@ deeptrace-ela = "deeptrace_ela.cli:main"
 
 [project.urls]
 "Homepage" = "https://shaheerulhassan.com/"
+"Interactive Web Demo" = "https://shaheerulhassan.com/tools/ela"
 "Documentation" = "https://shaheerulhassan.com/blog/engineering-ela-image-forensics-in-python"
 "Source" = "https://github.com/samjanjua6/deeptrace-ela"
 "Bug Tracker" = "https://github.com/samjanjua6/deeptrace-ela/issues"

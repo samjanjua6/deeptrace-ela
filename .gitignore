@@ -36,3 +36,7 @@ ENV/
 # Heatmap test outputs
 *_ela.png
 test_output/
+
+# Hugging Face deployment mirrors
+hf_clone/
+hf_space/

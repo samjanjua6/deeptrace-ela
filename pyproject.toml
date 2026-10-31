@@ -54,6 +54,11 @@ dev = [
 [project.scripts]
 deeptrace-ela = "deeptrace_ela.cli:main"
 
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["deeptrace_ela*"]
+exclude = ["tests*", "assets*", "hf_clone*", "hf_space*"]
+
 [project.urls]
 "Homepage" = "https://shaheerulhassan.com/"
 "Interactive Web Demo" = "https://shaheerulhassan.com/tools/ela"

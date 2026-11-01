@@ -2,9 +2,10 @@
 
 An open-source, NIST-grade Error Level Analysis (ELA) and JPEG compression artifact forensics toolkit developed by [Shaheer Ul Hassan](https://shaheerulhassan.com/).
 
-[![PyPI version](https://img.shields.io/pypi/v/deeptrace-ela.svg?color=blue)](https://pypi.org/project/deeptrace-ela/)
-[![Downloads](https://img.shields.io/pypi/dm/deeptrace-ela.svg?color=emerald)](https://pypistats.org/packages/deeptrace-ela)
-[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
+[![PyPI version](https://img.shields.io/pypi/v/deeptrace-ela.svg?color=blue&logo=pypi&logoColor=white)](https://pypi.org/project/deeptrace-ela/)
+[![Downloads](https://img.shields.io/pypi/dm/deeptrace-ela.svg?color=2ea44f&logo=pypi&logoColor=white)](https://pypistats.org/packages/deeptrace-ela)
+[![Total Downloads](https://static.pepy.tech/badge/deeptrace-ela)](https://pepy.tech/project/deeptrace-ela)
+[![Python versions](https://img.shields.io/pypi/pyversions/deeptrace-ela.svg?logo=python&logoColor=white)](https://pypi.org/project/deeptrace-ela/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-purple.svg)](https://opensource.org/licenses/MIT)
 [![Author](https://img.shields.io/badge/Author-Shaheer%20Ul%20Hassan-8F63DD)](https://shaheerulhassan.com/)
 [![GitHub stars](https://img.shields.io/github/stars/samjanjua6/deeptrace-ela?style=social)](https://github.com/samjanjua6/deeptrace-ela)
